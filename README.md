@@ -1,2 +1,3 @@
 # rancher
-Simplifying, Securing, &amp; Scaling your Kubernetes Deployments with F5 &amp; Rancher
+Simplifying, Securing, & Scaling your Kubernetes Deployments with NGINX & Rancher
+
