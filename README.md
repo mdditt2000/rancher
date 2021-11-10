@@ -56,3 +56,7 @@ View installed Apps from the Rancher dashboard as shown in the example
 Validate that CIS is deployed and running from the Deployment tab in the Rancher Dashboard
 
 ![validate](https://github.com/mdditt2000/rancher/blob/main/diagrams/2021-11-10_13-19-00.png)
+
+Select the **Deployment: f5-bigip-ctlr** from the Deployment tab in the Rancher Dashboard
+
+![validate](https://github.com/mdditt2000/rancher/blob/main/diagrams/2021-11-10_13-19-00.png)
