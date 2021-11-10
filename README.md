@@ -12,14 +12,8 @@ Using chart simplifies repeatable, versioned deployment of the F5 Container Ingr
 
     helm repo add f5-stable https://f5networks.github.io/charts/stable
 
-Create values.yaml as shown in examples:
+* Install the Helm chart using the following command:
 
-Install the Helm chart using the following command:
+    helm install -f cis-k8s-custom-resource-values.yaml f5-bigip-ctlr f5-stable/f5-bigip-ctlr
 
-helm install -f values.yaml <new-chart-name> f5-stable/f5-bigip-ctlr
-
-Install the Helm chart with skip crds (without custom resource definitions installations)
-helm install --skip-crds -f values.yaml <new-chart-name> f5-stable/f5-bigip-ctlr
-
-
-
+* cis-k8s-custom-resource-values [repo](https://github.com/mdditt2000/kubernetes-1-19/tree/master/cis%202.6/multi-site/east/cis-deployment)
