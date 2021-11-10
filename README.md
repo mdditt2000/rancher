@@ -53,3 +53,6 @@ View installed Apps from the Rancher dashboard as shown in the example
 
 ![installed-apps](https://github.com/mdditt2000/rancher/blob/main/diagrams/2021-11-10_13-10-48.png)
 
+Validate that CIS is deployed and running from the Deployment tab in the Rancher Dashboard
+
+![validate](https://github.com/mdditt2000/rancher/blob/main/diagrams/2021-11-10_13-19-00.png)
