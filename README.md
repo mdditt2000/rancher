@@ -1,6 +1,8 @@
-## Simplifying, Securing, & Scaling your Kubernetes Deployments with F5 & Rancher
+## Deploying F5 Container Ingress Services (CIS) in Rancher using Helm Charts
 
-Using chart simplifies repeatable, versioned deployment of the F5 Container Ingress Services (CIS). This is the simplest way to install the CIS on Rancher cluster. Helm is a package manager for Kubernetes. Helm is Kubernetes version of yum or apt. Helm deploys something called charts, which you can think of as a packaged application. It is a collection of all your versioned, pre-configured application resources which can be deployed as one unit. This chart creates a Deployment for one Pod containing the k8s-bigip-ctlr, it's supporting RBAC, Service Account and Custom Resources Definition installations. The purpose of this user-guide is demonstrate the simplicity of CIS with Rancher using Helm Charts with custom-resources. 
+Using chart simplifies repeatable, versioned deployment of the CIS. This is the simplest way to install the CIS on Rancher cluster. Helm is a package manager for Kubernetes. Helm is Kubernetes version of yum or apt. Helm deploys something called charts, which you can think of as a packaged application. It is a collection of all your versioned, pre-configured application resources which can be deployed as one unit. This chart creates a Deployment for one Pod containing the k8s-bigip-ctlr, it's supporting RBAC, Service Account and Custom Resources Definition installations. The purpose of this user-guide is demonstrate the simplicity of CIS with Rancher using Helm Charts with custom-resources.
+
+Demo on YouTube [video]()simple
 
 ### Installing the Chart for the F5 CIS
 
@@ -16,7 +18,7 @@ Using chart simplifies repeatable, versioned deployment of the F5 Container Ingr
 
     helm install -f https://raw.githubusercontent.com/mdditt2000/rancher/main/cis-deployment/cis-k8s-custom-resource-values.yaml f5-bigip-ctlr f5-stable/f5-bigip-ctlr
 
-#### example creating the CIS deployment from the Helm Chart
+#### Creating the CIS deployment from the Helm Chart
 
 ```
 > kubectl create secret generic f5-bigip-ctlr-login -n kube-system --from-literal=username=admin --from-literal=password=<secret>
@@ -60,3 +62,5 @@ Validate that CIS is deployed and running from the Deployment tab in the Rancher
 Select the **Deployment: f5-bigip-ctlr** from the Deployment tab in the Rancher Dashboard
 
 ![validate](https://github.com/mdditt2000/rancher/blob/main/diagrams/2021-11-10_13-19-00.png)
+
+**Congratulations CIS is deployed in Rancher**
