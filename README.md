@@ -16,4 +16,4 @@ Using chart simplifies repeatable, versioned deployment of the F5 Container Ingr
 
     helm install -f cis-k8s-custom-resource-values.yaml f5-bigip-ctlr f5-stable/f5-bigip-ctlr
 
-* cis-k8s-custom-resource-values [repo](https://github.com/mdditt2000/kubernetes-1-19/tree/master/cis%202.6/multi-site/east/cis-deployment)
+* cis-k8s-custom-resource-values [repo](https://github.com/mdditt2000/rancher/blob/main/cis-deployment/cis-k8s-custom-resource-values.yaml)
